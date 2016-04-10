@@ -9,8 +9,11 @@
 ***********************************************/
 
 #include <cstdio>
-#include "JsonFile.h"
 #include <ctime>
+#include "rapidjson/document.h"
+#include "rapidjson/writer.h"
+#include "rapidjson/stringbuffer.h"
+
 class Deal{
 public:
 	static void Perform(char *,char *);

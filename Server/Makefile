@@ -12,7 +12,7 @@ TARGET = main.out
 
 BIN_TARGET = ${DIR_BIN}/${TARGET}
 
-CC = g++
+CC = arm-linux-gnueabihf-g++
 
 CFLAGS = -g -Wall -I ${DIR_INC}
 

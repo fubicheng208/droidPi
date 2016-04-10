@@ -9,7 +9,7 @@
 ***********************************************/
 #include "Deal.h"
 
-
+using namespace rapidjson;
 void Deal::Perform(char *recv,char *send)
 {
 
@@ -19,84 +19,21 @@ void Deal::Perform(char *recv,char *send)
 	tm* t = localtime(&tt);
 	if(!doc.HasMember("method"))
 	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
+//		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
 		printf("Client: %s\n",recv);
 		sprintf(send,"{\"method\":\"unknown_command\"}");
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
+//		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
 		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"SayHi")==0)
-	{
-	}
-	else if(strcmp(doc["method"].GetString(),"import_student")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"import_room")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"delete_room")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"delete_student")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"show_student")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"show_room")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"search_student")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"get_room")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("Server: %s\n",send);
-	}
-	else if(strcmp(doc["method"].GetString(),"get_student")==0)
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
-	}
-	else
-	{
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Client: %s\n",recv);
-		sprintf(send,"{\"method\":\"unknown_command\"}");
-		printf("[%02d:%02d:%02d]:",t->tm_hour,t->tm_min,t->tm_sec);
-		printf("Server: %s\n",send);
+	}else if(strcmp(doc["method"].GetString(),"debug")==0 && doc.HasMember("encode")){
+		if(strcmp(doc["encode"].GetString(),"plain")==0){
+			sprintf(send,"{\"method\":\"plain\"}");
+		}else if(strcmp(doc["encode"].GetString(),"base64")==0){
+			sprintf(send,"{\"method\":\"base64\"}");
+		}else{
+			sprintf(send,"{\"method\":\"Unknow_encode\"}");
+		}
+	}else{
+		sprintf(send,"{\"method\":\"Unknow_command\"}");
 	}
 
 }
