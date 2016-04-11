@@ -36,7 +36,7 @@ void Base64::Encode(char *input,char *output){
 				value = value*2 + tmp[(i+head)%11];
 			head=(head+6)%11;
 			output[olen++]=encode_table[value];
-			printf("output[%d]:%c\n",olen-1,output[olen-1]);
+			//printf("output[%d]:%c\n",olen-1,output[olen-1]);
 		}
 	}
 	while((tail-head+11)%6)	tmp[tail++]=0;
