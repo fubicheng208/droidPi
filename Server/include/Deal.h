@@ -14,7 +14,9 @@
 #include "rapidjson/writer.h"
 #include "rapidjson/stringbuffer.h"
 #include "Base64.h"
+#include "rapidjson/pointer.h"
 
+using namespace rapidjson;
 class Deal{
 public:
 	static void Perform(char *,char *);

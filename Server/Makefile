@@ -14,7 +14,7 @@ BIN_TARGET = ${DIR_BIN}/${TARGET}
 
 CC = arm-linux-gnueabihf-g++
 
-CFLAGS = -g -Wall -I ${DIR_INC}
+CFLAGS = -g -Wall -I ${DIR_INC} -lwiringPi
 
 
 ${BIN_TARGET}:${OBJ}
