@@ -43,13 +43,16 @@ void Deal::Perform(char *recv,char *send)
 }
 bool Deal::getPorts(Document &doc,char *output){
 
+	return true;
 }
 bool Deal::getPort(Document &doc,char *output){
-
+	
+	return true;
 }
 
 bool Deal::setPort(Document &doc,char *output){
 
+	return true;
 }
 
 

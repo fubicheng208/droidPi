@@ -14,11 +14,10 @@ BIN_TARGET = ${DIR_BIN}/${TARGET}
 
 CC = arm-linux-gnueabihf-g++
 
-CFLAGS = -g -Wall -I ${DIR_INC} -lwiringPi
-
+CFLAGS = -g -Wall -I ${DIR_INC}  -lwiringPi -std=c++11
 
 ${BIN_TARGET}:${OBJ}
-	$(CC) $(OBJ) -o $@
+	$(CC) $(OBJ) -o  $@ -lwiringPi
 
 ${DIR_OBJ}/%.o:${DIR_SRC}/%.cpp
 	$(CC) ${CFLAGS} -c $< -o $@
