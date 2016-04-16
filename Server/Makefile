@@ -8,7 +8,7 @@ DIR_BIN = ./bin
 SRC = $(wildcard ${DIR_SRC}/*.cpp)
 OBJ = $(patsubst %.cpp, ${DIR_OBJ}/%.o, $(notdir $(SRC)))
 
-TARGET = main.out
+TARGET = droidPi
 
 BIN_TARGET = ${DIR_BIN}/${TARGET}
 

@@ -44,3 +44,9 @@ bool Piinfo::setPinStatus(int number, int v){
 	}
 	return true;
 }
+
+int Piinfo::getValue(int number){
+
+	return value[number];
+
+}

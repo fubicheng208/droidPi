@@ -15,13 +15,14 @@
 #include "rapidjson/stringbuffer.h"
 #include "Base64.h"
 #include "rapidjson/pointer.h"
+#include "Piinfo.h"
 
 using namespace rapidjson;
 class Deal{
 public:
 	static void Perform(char *,char *);
 private:
-	bool getPorts(Document &,char *);
 	bool getPort(Document &,char *);
 	bool setPort(Document &,char *);
+	Piinfo Pi;
 };

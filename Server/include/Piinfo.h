@@ -13,4 +13,5 @@ public:
 	Piinfo();
 	int readPinStatus(int number);
 	bool setPinStatus(int number,int value);
+	int getValue(int num);
 };
