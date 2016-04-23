@@ -1,0 +1,50 @@
+{
+[
+	#获取端口所有状态
+	{
+		"method":"GetPorts","encode":"Base64"
+	},
+	{
+		"method":"result","encode":"Base64",
+		"Port01":"in",		"Port02":"out_high","Port03":"out_low",	"Port04":"in",		"Port05":"out_low",
+		"Port06":"out_high","Port07":"out_high","Port08":"out_low",	"Port09":"in",		"Port10":"in",
+		"Port11":"in",		"Port12":"in",		"Port13":"in",		"Port14":"in",		"Port15":"in",
+		"Port16":"in",		"Port17":"in",		"Port18":"in",		"Port19":"in",		"Port20":"in",
+		"Port21":"in",		"Port22":"in",		"Port23":"in",		"Port24":"in",		"Port25":"in",
+		"Port26":"in",		"Port27":"in",		"Port28":"in",		"Port29":"in",		"Port30":"in",
+		"Port31":"in",		"Port32":"in",		"Port33":"in",		"Port34":"in",		"Port35":"in",
+		"Port36":"in",		"Port37":"in",		"Port38":"in",		"Port39":"in",		"Port40":"in"
+	
+	}
+]
+,
+[
+	#获取一个端口状态
+	{
+		"method":"GetPort",
+		"encode":"Base64",
+		"Port":22
+	},
+	{
+		"method":"result",
+		"encode":"Base64",
+		"result":"in"
+	}
+]
+,
+[
+	#设置一个端口
+	{
+		"method":"SetPort",
+		"encode":"Base64",
+		"Port":22,
+		"value":["in","out_low","out_high"]
+	},
+	{
+		"method":"result",
+		"encode":"Base64",
+		"result":["succeed","faild"]
+	}
+]
+
+}
