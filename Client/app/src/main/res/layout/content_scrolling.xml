@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.work.mdroidpi.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">-->
+
+
+    <!--<RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">-->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="80"
+        android:horizontalSpacing="20dp"
+        >
+
+     <!--the first line-->
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3.3V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="5V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="01"
+            />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="02" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!-- </RelativeLayout>-->
+
+        <!--the second row-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SDA.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="5V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="03" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="04" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the third row-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SCL.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="05" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="06" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the fifth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TxD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="07" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="08" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+       <!--the fifth row-->
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="0V" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="RxD" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <com.gc.materialdesign.views.Switch
+           android:id="@+id/switchView9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="#1E88E5"
+           materialdesign:check="true" />
+
+
+
+       <com.work.mdroidpi.mButton
+           android:id="@+id/button9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="#388e3c"
+           android:text="09" />
+
+       <com.work.mdroidpi.mButton
+           android:id="@+id/button10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#388e3c"
+           android:text="10" />
+
+
+
+       <com.gc.materialdesign.views.Switch
+           android:id="@+id/switchView10"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="#1E88E5"
+           materialdesign:check="true" />
+
+        <!--the sixth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="11" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="12" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the seventh row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="13" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="14" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the eighth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="15" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="16" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the ninth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3.3V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="17" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="18" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the tenth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MOSI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="19" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="20" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the eleventh row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MISO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO. 6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="21" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="22" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the twelfth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SCLK" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CE0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="19" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="20" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the thirteenth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CE1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="25" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="26" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the fourteenth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SDA.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CEL.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="27" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="28" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the fifth row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="29" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="30" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the 16th row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="31" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="32" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the 17th row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.23" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="33" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="34" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the 18th row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.27" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="35" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="36" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the 19th row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="37" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="38" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <!--the 20th row-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0V" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GPIO.29" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#388e3c"
+            android:text="39" />
+
+        <com.work.mdroidpi.mButton
+            android:id="@+id/button40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#388e3c"
+            android:text="40" />
+
+
+
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/switchView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#1E88E5"
+            materialdesign:check="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- </RelativeLayout>-->
+    </GridLayout>
+</android.support.v4.widget.NestedScrollView>
